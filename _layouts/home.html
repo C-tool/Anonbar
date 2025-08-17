@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>হ্যাকার-স্টাইল ব্লগ</h1>
+  <p>ডার্ক, নীয়ন, দ্রুত—GitHub Pages দিয়ে সরাসরি ডিপ্লয় করুন।</p>
+</section>
+
+<section aria-labelledby="recent-posts">
+  <h2 id="recent-posts" class="small">সাম্প্রতিক পোস্ট</h2>
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="card">
+        <a href="{{ post.url | relative_url }}">
+          <h2>{{ post.title }}</h2>
+          <div class="meta">
+            {{ post.date | date: "%d %B %Y" }}
+            {% if post.categories and post.categories.size > 0 %}
+              — {{ post.categories | array_to_sentence_string }}
+            {% endif %}
+          </div>
+          <p class="small">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="article">
+  <header>
+    <p class="small">{{ page.date | date: "%d %B %Y, %I:%M %p" }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.categories and page.categories.size > 0 %}
+      <p class="small">ক্যাটাগরি: {{ page.categories | array_to_sentence_string }}</p>
+    {% endif %}
+    <hr>
+  </header>
+  {{ content }}
+  <hr>
+  <p class="small">ট্যাগ: {% if page.tags %}{{ page.tags | array_to_sentence_string }}{% else %}—{% endif %}</p>
+</article>
