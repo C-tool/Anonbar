@@ -1,0 +1,22 @@
+title: "আমার ব্লগ"
+description: "GitHub Pages দিয়ে চালানো সহজ ব্লগ"
+url: "" # আপনার কাস্টম ডোমেইন থাকলে এখানে দিন, না হলে ফাঁকা রাখুন
+baseurl: ""
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+# লেখকের তথ্য
+author:
+  name: "আপনার নাম"
+  email: "you@example.com"
+
+# বাংলা লোকেল (ঐচ্ছিক)
+lang: bn-BD
+
+# ন্যাভিগেশন (minima এর জন্য)
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/yourusername" }
+    - { platform: facebook, user_url: "https://facebook.com/yourprofile" }
