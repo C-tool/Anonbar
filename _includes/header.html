@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="logo"><> </span><span>H4x Blog</span>
+    </a>
+    <nav class="menu" aria-label="Main">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <button class="menu-btn" data-menu-btn aria-label="Toggle menu">☰ Menu</button>
+  </div>
+  <div class="drawer container" data-drawer data-open="false" style="display:none">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
