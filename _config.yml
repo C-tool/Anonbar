@@ -1,22 +1,30 @@
-title: "আমার ব্লগ"
-description: "GitHub Pages দিয়ে চালানো সহজ ব্লগ"
-url: "" # আপনার কাস্টম ডোমেইন থাকলে এখানে দিন, না হলে ফাঁকা রাখুন
-baseurl: ""
+title: "H4x Blog"
+description: "A hacker-style dark theme blog powered by GitHub Pages + Jekyll"
+url: "" # e.g. https://<username>.github.io
+baseurl: "" # e.g. /myblog
 
-theme: minima
+theme: null
 plugins:
   - jekyll-feed
 
-# লেখকের তথ্য
+# Author info
 author:
-  name: "আপনার নাম"
+  name: "Robin"
   email: "you@example.com"
 
-# বাংলা লোকেল (ঐচ্ছিক)
 lang: bn-BD
 
-# ন্যাভিগেশন (minima এর জন্য)
-minima:
-  social_links:
-    - { platform: github,  user_url: "https://github.com/yourusername" }
-    - { platform: facebook, user_url: "https://facebook.com/yourprofile" }
+# Build
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+
+# Feed config
+feed:
+  path: feed.xml
+
+# Exclude
+exclude:
+  - README.md
